@@ -1,7 +1,7 @@
 <template>
   <TodoTemplate>
     <TodoInsert @insert="onInsert" />
-    <TodoList :todos="todos" @remove="onRemove" @toggle="onToggle" />
+    <TodoList :todos="todos" @제거이벤트처리="삭제함수" @toggle="onToggle" />
   </TodoTemplate>
 </template>
 
@@ -13,7 +13,7 @@ import TodoTemplate from './components/TodoTemplate.vue';
 
 // 반응형 상태 선언
 const todos = reactive([
-  { id: 1, text: '리액트의 기초 알아보기', checked: true },
+  { id: 1, text: 'Vue.js 기초 알아보기', checked: true },
   { id: 2, text: '컴포넌트 스타일링해 보기', checked: true },
   { id: 3, text: '일정 관리 앱 만들어 보기', checked: false },
 ]);
@@ -27,7 +27,7 @@ const onInsert = (text) => {
   nextId.value++;
 };
 
-const onRemove = (id) => {
+const 삭제함수 = (id) => {
   const index = todos.findIndex(todo => todo.id === id);
   if (index !== -1) {
     todos.splice(index, 1);
