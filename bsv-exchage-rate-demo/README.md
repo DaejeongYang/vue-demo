@@ -92,4 +92,4 @@ export default defineConfig({
   })
   ```
 
-- [Bootstrap Vue Next](https://bootstrap-vue-next.github.io)
+- [Bootstrap Vue Next](https://bootstrap-vue-next.github.io/bootstrap-vue-next/)
