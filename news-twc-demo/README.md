@@ -11,7 +11,7 @@
 - tailwind.config.js 파일을 열고 content 항목에 아래 내용을 기입합니다
   > content: ['./src/**/*.{vue,js,jsx,ts,tsx}', './public/index.html'],
 
-- src/index.css 파일 내용을 모두 지우고 아래 내용으로 기입합니다
+- src/style.css 파일 내용을 모두 지우고 아래 내용으로 기입합니다
   > @import 'tailwindcss/base';<br>
     @import 'tailwindcss/components';<br>
     @import 'tailwindcss/utilities';
